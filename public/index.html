@@ -18,6 +18,10 @@
         })
 
         socket.emit('mensaje', {nombre: 'fernando'});
+        socket.on('active-bands', function (bands){
+            console.clear();
+           console.table(bands)
+        });
     </script>
 </head>
 <body>
